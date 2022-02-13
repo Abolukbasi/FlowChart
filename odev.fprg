@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-13 06:41:41 PM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLUJLSlRVTVM7MjAyMi0wMi0xMjsxMTo0ODoxNSBQTTsyNjkx"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLUJLSlRVTVM7MjAyMi0wMi0xMzswNjo0MTo0MSBQTTsyOzI3OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3" type="Integer" array="False" size=""/>
+            <declare name="Sonuc" type="Real" array="False" size=""/>
+            <declare name="S" type="String" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <assign variable="Sonuc" expression="(n1+n2+n3)/3"/>
+            <if expression="Sonuc&lt;45">
+                <then>
+                    <assign variable="S" expression="&quot;Zay&#305;f&quot;"/>
+                </then>
+                <else>
+                    <if expression="Sonuc&lt;70">
+                        <then>
+                            <assign variable="S" expression="&quot;&#304;yi&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="S" expression="&quot;Pekiyi&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
